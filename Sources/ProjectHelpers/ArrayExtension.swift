@@ -1,12 +1,21 @@
-//
-//  File.swift
-//  
-//
-//  Created by Kanstantsin Ausianovich on 18.06.22.
-//
+import UIKit
 
-public extension Array {
-    func element(at index: Int) -> Element? {
+/*
+See LICENSE folder for this sample’s licensing information.
+
+*/
+
+public protocol ArrayExtension: Collection {}
+extension Array: ArrayExtension {}
+
+public extension ArrayExtension {
+    
+    ///Getting element if it exists in the array
+    ///
+    /// - Parameters:
+    ///     - index: index of the array
+    /// - Returns: Optional value of the array
+    func element(at index: Self.Index) -> Element? {
         if self.indices.contains(index) {
             return self[index]
         } else {
