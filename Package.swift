@@ -26,5 +26,5 @@ let package = Package(
             name: "ProjectHelpersTests",
             dependencies: ["ProjectHelpers"]),
     ],
-    swiftLanguageVersions: [.version("5.5")]
+    swiftLanguageVersions: [.v5]
 )
