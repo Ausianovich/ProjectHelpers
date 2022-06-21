@@ -1,9 +1,9 @@
-import UIKit
-
 /*
 See LICENSE folder for this sample’s licensing information.
 
 */
+
+import Foundation
 
 public protocol ArrayExtension: Collection {}
 extension Array: ArrayExtension {}
