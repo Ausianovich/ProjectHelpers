@@ -11,9 +11,4 @@ final class ArrayExtensionTests: XCTestCase {
         let array = [1, 2, 3]
         XCTAssertEqual(array.element(at: 0), 1)
     }
-    
-    func testWhenIndexInRangeReturnValue_2() {
-        let array = [1, 2, 3]
-        XCTAssertEqual(array.element(at: 0), 1)
-    }
 }
